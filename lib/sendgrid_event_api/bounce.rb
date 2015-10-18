@@ -1,7 +1,7 @@
 module SendgridEventApi
 
   class Bounce
-
+    # https://sendgrid.com/docs/API_Reference/Web_API/bounces.html
     # https://api.sendgrid.com/api/bounces.get.json?api_user=email@domain.com&api_key=XXXXXXXX
     
     def initialize(username, password)
