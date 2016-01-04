@@ -14,11 +14,11 @@ module SendgridEventApi
       conn.get '/api/invalidemails.get.json', merge_params(api_user, api_key, args)
     end
 
-    def delete
+    def delete(args={})
       conn.post '/api/invalidemails.delete.json', merge_params(api_user, api_key, args)
     end
 
-    def count
+    def count(args={})
       conn.get '/api/invalidemails.count.json', merge_params(api_user, api_key, args)
     end
 
